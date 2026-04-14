@@ -15,16 +15,26 @@
         width: 100%;
         height: 100%;
       }
+      .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
   <body>
-    <p>
+    <p class="sr-only">
       Open the resume directly: <a href="Resume.pdf">Resume.pdf</a>
     </p>
     <iframe
       src="Resume.pdf"
       title="Embedded resume PDF document"
-      aria-label="Embedded resume PDF document"
     >
       <p>
         Your browser cannot display PDFs inline. Open
