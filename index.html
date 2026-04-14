@@ -4,12 +4,25 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Resume</title>
-    <meta http-equiv="refresh" content="0; url=Resume.pdf" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+      }
+      iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
-    <p>Redirecting to <a href="Resume.pdf">Resume.pdf</a>…</p>
-    <script>
-      window.location.replace("Resume.pdf");
-    </script>
+    <iframe src="Resume.pdf" title="Resume PDF">
+      <p>
+        Your browser cannot display PDFs inline. Open
+        <a href="Resume.pdf">Resume.pdf</a>.
+      </p>
+    </iframe>
   </body>
 </html>
